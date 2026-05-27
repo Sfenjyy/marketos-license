@@ -1,0 +1,4 @@
+node_modules/
+licenses.db
+*.db
+.env

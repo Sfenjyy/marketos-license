@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: marketos-license
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SIGNING_SECRET
+        generateValue: true
